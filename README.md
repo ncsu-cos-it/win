@@ -1,6 +1,6 @@
 # NC State University - COS IT
 ## Initial
-mkdir \opt<br>
+md \opt<br>
 cd \opt<br>
 git clone https://github.com/ncsu-cos-it/win cos<br>
 ## Update
