@@ -1,11 +1,17 @@
 # NC State University - COS IT
 ## Initial
-md \opt<br>
-cd \opt<br>
-git clone https://github.com/ncsu-cos-it/win cos<br>
+<ol>
+ <li>md \opt</li>
+ <li>cd \opt</li>
+ <li>git clone https://github.com/ncsu-cos-it/win cos</li>
+</ol>
+
 ## Update
-cd \opt\cos<br>
-git fetch<br>
-git merge<br>
+<ol>
+ <li>cd \opt\cos</li>
+ <li>git fetch</li>
+ <li>git merge</li>
+</ol>
+
 ## Contact
 <a href="mailto:group-sciences-rci@ncsu.edu">group-sciences-rci@ncsu.edu</a><br>
