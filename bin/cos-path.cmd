@@ -1,2 +1,2 @@
 @echo off
-setx PATH "%PATH%;c:\opt\cos\bin"
+setx /m PATH "%PATH%;c:\opt\cos\bin"
