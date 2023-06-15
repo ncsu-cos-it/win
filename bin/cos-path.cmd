@@ -1,2 +1,2 @@
 @echo off
-pathed /append c:\opt\cos\bin
+setx PATH %%PATH%%;"c:\opt\cos\bin"
