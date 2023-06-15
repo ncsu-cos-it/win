@@ -1,6 +1,13 @@
 # NC State University - COS IT
-## Initial
+## Initial Install
 <ol>
+ <li>Install Git for Windows </li>
+ <ul>
+    <li<a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a></li>
+    <li><a href="https://desktop.github.com/">https://desktop.github.com/</a></li>
+ </ul>
+ <li>{Press} <WinLogo><R></li>
+ <li>{Type} cmd </li>
  <li>md \opt</li>
  <li>cd \opt</li>
  <li>git clone https://github.com/ncsu-cos-it/win cos</li>
