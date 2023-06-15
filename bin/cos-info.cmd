@@ -12,5 +12,10 @@ set /p IP=<%CONFDIR%\IP.txt
 echo HostName:     %COMPUTERNAME% > %USERPROFILE%\Desktop\COS-INFO.txt
 echo Tag:          %TAG%        >> %USERPROFILE%\Desktop\COS-INFO.txt
 echo IP:           %IP%         >> %USERPROFILE%\Desktop\COS-INFO.txt
-type %USERPROFILE%\Desktop\COS-INFO.txt
+if EXIST "%USERPROFILE%\Desktop\COS-INFO.txt" type %USERPROFILE%\Desktop\COS-INFO.txt
+set SN=
+set TAG=
+set IP=
+set BINDIR=
+set CONFDIR=
 timeout /t 20
