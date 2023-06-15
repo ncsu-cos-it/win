@@ -18,6 +18,8 @@
 
 ## Update
 <ol>
+ <li>{Press} &lt;WinLogo&gt;&lt;R&gt;</li>
+ <li>{Type} cmd </li>
  <li>cd \opt\cos</li>
  <li>git fetch</li>
  <li>git merge</li>
