@@ -5,7 +5,7 @@
  <ul>
     <li<a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a></li>
  </ul>
- <li>{Press} <WinLogo><R></li>
+ <li>{Press} &lt;WinLogo&gt;&lt;R&gt;</li>
  <li>{Type} cmd </li>
  <li>md \opt</li>
  <li>cd \opt</li>
