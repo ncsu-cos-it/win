@@ -23,6 +23,7 @@
  <li>cd \opt\cos</li>
  <li>git fetch</li>
  <li>git merge</li>
+ <li>exit</li>
 </ol>
 
 ## Contact
