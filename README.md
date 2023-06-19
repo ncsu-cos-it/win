@@ -7,6 +7,7 @@
  </ul>
  <li>{Press} &lt;WinLogo&gt;&lt;R&gt;</li>
  <li>{Type} cmd </li>
+ <li>{Type Command (Black) Window}
  <li>md \opt</li>
  <li>cd \opt</li>
  <li>git clone https://github.com/ncsu-cos-it/win cos</li>
