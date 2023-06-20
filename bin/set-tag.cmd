@@ -6,9 +6,7 @@ powershell -command %BINDIR%\sn-set.ps1 > %CONFDIR%\SN.txt
 :SNFOUND
 set /p SN=<%CONFDIR%\SN.txt
 set SNIPEINFO=%TEMP%\%SN%.txt"
-echo SN=%SN%999
 powershell -command %BINDIR%\sn-query.ps1 %SN% > %SNIPEINFO%
-GOTO :END
 
 REM If %SNIPEINFO%  Size = 0 GOTO :VPNERROR
 
