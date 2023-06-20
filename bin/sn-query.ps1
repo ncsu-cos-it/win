@@ -6,7 +6,7 @@ $headers.Add("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhd
 $webaddr1="https://inventory.cos.ncsu.edu/api/v1/hardware/byserial/"
 $webaddr2="?deleted=false"
 $webaddress=$webaddr1+$SN+$webaddr2
-$response = Invoke-WebRequest -Uri $webaddress -Method GET -Headers $headers
+$response = Invoke-WebRequest -Uri $webaddress -UseBasicParsing -Method GET -Headers $headers
    Write-Host "$response"
 }
 else {
