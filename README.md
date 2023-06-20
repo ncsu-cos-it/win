@@ -33,8 +33,8 @@
    <li>{Click} Open file location</li>
    <li>{Double Click} Startup (folder)</li>
    <li>(Drag BGInfo from Desktop to Startup folder)</li>
-   <li>{Click}Continue</li>
-   <li>{Click}Yes</li>
+   <li>{Click} Continue</li>
+   <li>{Click} Yes</li>
    <li>{Double Click} BGInfo</li>
    <li>(Close Window) Startup</li>
 </ol>
