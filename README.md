@@ -20,8 +20,8 @@
 ## BGInfo Install
 <ol>
    <li>(After above commands and been executed.)</li>
-   <li>{Right Click}Desktop</li>
-   <li>(New) &lt;(Shortcut)</li>
+   <li>{Right Click the Desktop background}</li>
+   <li>(New) &gt;(Shortcut)</li>
    <li>{Type} c:\opt\cos\bin\bginfo.cmd</li>
    <li>{Type} BGInfo</li>
    <li>(Find BGInfo on Desklop and Right Click Icon)</li>
