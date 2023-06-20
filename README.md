@@ -29,7 +29,7 @@
    <li>(Change Run:) Minimized</li>
    <li>{Click} Apply</li>
    <li>{Click} OK</li>
-   <li>(In Seaerch Bar at bottom of Screen){Type} Chrome</li>
+   <li>(In Search Bar at bottom of Screen){Type} Chrome</li>
    <li>{Click} Open file location</li>
    <li>{Double Click} Startup (folder)</li>
    <li>(Drag BGInfo from Desktop to Startup folder)</li>
