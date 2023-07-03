@@ -57,7 +57,7 @@
         if ($today -ge $EndDate) { Write-Host -NoNewLine "Warranty Exp. : $EndDate  "; Write-Host -ForegroundColor "Yellow" "[WARRANTY EXPIRED]" }
         else { Write-Host "Warranty Exp. : $EndDate" } #> 
 
-        Write-Host "$servicetag,$StartDate,$EndDate" 
+        Write-Host "Dell,$Device,$servicetag,$StartDate,$EndDate" 
 
         if (!($ClearEMS)) {
             $i = 0
