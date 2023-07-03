@@ -1,0 +1,36 @@
+#!/bin/bash
+#
+if [ $# -lt 1 ]; then
+	echo ERROR: $0 {Dell ServiceTag}
+	exit 0
+fi
+access_token_url="https://apigtwb2c.us.dell.com/auth/oauth/v2/token"
+grant_type="client_credentials"
+client_id="l7e0e01c38206545e68ef9b72ae8e32726"
+client_secret="6d178ca9b7bf46fb844347bd317b1e57"
+
+RESULT=`curl -s --request POST \
+	--url "$access_token_url" \
+	--header 'Content-Type: application/x-www-form-urlencoded' \
+	--data-urlencode "client_id=$client_id" \
+	--data-urlencode "client_secret=$client_secret" \
+	--data-urlencode "grant_type=$grant_type"`
+
+AUTHORIZATION=`jq '.access_token' <<< "$RESULT"`
+ACCESS=`echo $AUTHORIZATION | tr -d '"'`
+# echo ACCESS_TOKEN=$ACCESS
+
+
+for a in ${@}
+do
+   SN=$a
+   sn_url="https://apigtwb2c.us.dell.com/PROD/sbil/eapi/v5/asset-entitlements"
+
+   RESULT=`curl -s --request GET \
+          --url 'https://apigtwb2c.us.dell.com/PROD/sbil/eapi/v5/asset-entitlements?servicetags='$SN''\
+          --header "Authorization: Bearer $ACCESS" \
+          --header "accept: application/json" `
+   STARTDATE=`echo -n $RESULT | cut -f20 -d: | cut -f1 -d"T" | sed -e 's/"//g'`
+   ENDDATE=`echo  $RESULT | cut -f23 -d: | cut -f1 -d"T" | sed -e 's/"//g'`
+   echo $SN,$STARTDATE,$ENDDATE
+done
