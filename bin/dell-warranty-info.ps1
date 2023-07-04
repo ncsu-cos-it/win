@@ -51,7 +51,6 @@
         $today = get-date
 
         Write-Host -ForegroundColor White -BackgroundColor "DarkRed" $Computer
-        Write-Host "Vendor        : Dell"
         Write-Host "Service Tag   : $servicetag"
         Write-Host "Model         : $Device"
         Write-Host "Warranty Beg. : $StartDate"
