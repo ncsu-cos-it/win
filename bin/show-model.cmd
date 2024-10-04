@@ -1,7 +1,12 @@
 @echo off
-FOR /F "tokens=2 delims='='" %%A in ('wmic ComputerSystem Get Model /value') do SET model=%%A
-REM echo %model%
-set model=%model: =_%
-echo %model% >> c:\opt\cos\etc\MODEL.txt
-echo %model%
+set BINDIR="C:\opt\cos\bin"
+set CONFDIR="C:\opt\cos\etc"
+if EXIST "%CONFDIR%\Model.txt" GOTO :LOCALFILE
+call %BINDIR%\set-model.cmd
+
+:LOCALFILE
+type %CONFDIR%\Model.txt
+
+:END
 timeout /t 20
+

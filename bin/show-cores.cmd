@@ -1,4 +1,5 @@
 @echo off
-wmic cpu get DeviceID,NumberOfCores,NumberOfLogicalProcessors
-echo CORES = %NUMBER_OF_PROCESSORS%
-timeout /t 20
+set BINDIR="C:\opt\cos\bin"
+set CONFDIR="C:\opt\cos\etc"
+powershell -command %BINDIR%\core-set.ps1 
+timeout /t /20

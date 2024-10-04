@@ -1,3 +1,2 @@
-$str= wmic bios get serialnumber
-$sn= $str[2]
-$sn.trim()
+$SerialNumber = Get-ComputerInfo | Select-Object -ExpandProperty BiosSeralNumber
+write $SerialNumber
