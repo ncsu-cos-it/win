@@ -1,2 +1,2 @@
-$Cores = Get-ComputerInfo | Select-Object -ExpandProperty CsLogicalProcessors
+$Cores = Get-ComputerInfo | Select-Object -ExpandProperty CsNumberOfLogicalProcessors
 write $Cores
