@@ -1,2 +1,2 @@
 @echo off
-powershell -noprofile -executionpolicy bypass -command C:\opt\cos\bin\update-cos.ps1
+powershell -noprofile -executionpolicy bypass -command \\wolftech.ad.ncsu.edu\cos\stat\files\it_pub\update-cos.ps1
