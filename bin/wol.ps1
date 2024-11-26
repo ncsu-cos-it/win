@@ -8,6 +8,9 @@
 #######################################################
 ## Source:  https://gist.github.com/jpluimers/344ed287b784048349769a334f116b46
 ##
+## NCSU -- Added parsing of wol-macs.txt to script.
+## NCSU -- Created wol.cmd to easily call from CMD prompt.
+##
 <#
 .SYNOPSIS
 Starts a list of physical machines by using Wake On LAN.
