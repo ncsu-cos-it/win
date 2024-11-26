@@ -84,12 +84,17 @@ function Send-Packet([string]$MacAddressString) {
 }
 
 ## Send magic packet to wake machine
-
-
-$Data='wol-macs.txt'
-$MACAddresses = Get-Content $Data #This would be the full path to your text or csv file.
-Foreach ($MACAddress in $MACAddresses) {
-   Write-Output "Waking... $MacAddress"
-   Send-Packet $MacAddress
-   Start-Sleep -Seconds 2
-   }
+if (-not $MacAddress) {
+  $Data='wol-macs.txt'
+  $MACAddresses = Get-Content $Data #This would be the full path to your text or csv file.
+  Foreach ($MACAddress in $MACAddresses) {
+     Write-Output "Waking... $MacAddress"
+     Send-Packet $MacAddress
+     Start-Sleep -Seconds 2
+  }
+}
+else
+{
+Write-Output "Waking... $MacAddress"
+Send-Packet $MacAddress
+}
