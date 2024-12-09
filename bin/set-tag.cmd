@@ -20,5 +20,3 @@ echo "Missing VPN Connection"
 
 :END
 set SNIPEINFO=
-set BINDIR=
-set CONFDIR=
