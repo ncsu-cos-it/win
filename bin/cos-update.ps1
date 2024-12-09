@@ -19,5 +19,3 @@ if (Test-Path $localPath) {
     Set-Acl $localPath $Acl
 }
 
-Remove-Item Env:repoUrl
-Remove-Item Env:localPath
