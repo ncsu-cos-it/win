@@ -8,4 +8,6 @@ call %BINDIR%\set-sn.cmd
 type %CONFDIR%\SN.txt
 
 :END
+set BINDIR=
+set CONFDIR=
 timeout /t 20

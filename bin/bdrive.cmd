@@ -14,3 +14,5 @@ if exist B:\ (
 )
 net use B: \\%UNITYID%.file.ncsu.edu\ncsu\%UNITYID% /user:WOLFTECH\%UNITYID% /persistent:no
 c:\windows\explorer B:
+set UNITYID=
+set CD=

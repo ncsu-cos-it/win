@@ -18,3 +18,6 @@ if (Test-Path $localPath) {
     $Acl.AddAccessRule($AccessRule)
     Set-Acl $localPath $Acl
 }
+
+Remove-Item Env:repoUrl
+Remove-Item Env:localPath

@@ -8,5 +8,7 @@ call %BINDIR%\set-model.cmd
 type %CONFDIR%\Model.txt
 
 :END
+set BINDIR=
+set CONFDIR=
 timeout /t 20
 

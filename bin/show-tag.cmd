@@ -8,4 +8,6 @@ call %BINDIR%\set-tag.cmd
 type %CONFDIR%\Tag.txt
 
 :END
+set BINDIR=
+set CONFDIR=
 timeout /t 20
