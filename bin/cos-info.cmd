@@ -9,7 +9,8 @@ call %BINDIR%\set-ip
 set /p SN=<%CONFDIR%\SN.txt
 set /p TAG=<%CONFDIR%\Tag.txt
 set /p IP=<%CONFDIR%\IP.txt
-if EXIST %NCSU% set USERPROFILE=S:\
+if DEFINED NCSU set NCSUDRIVE=%NCSU:~0,2%
+if NOT "%NCSUDRIVE%" == "%HOMEDRIVE%" set USERPROFILE=%NCSUDRIVE% 
 echo Email:    help@sciencesncsu.edu > %USERPROFILE%\Desktop\COS-INFO.txt
 echo HostName: %COMPUTERNAME% >> %USERPROFILE%\Desktop\COS-INFO.txt
 echo Tag:      %TAG%        >> %USERPROFILE%\Desktop\COS-INFO.txt
