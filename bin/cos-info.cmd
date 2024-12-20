@@ -9,17 +9,25 @@ call %BINDIR%\set-ip
 set /p SN=<%CONFDIR%\SN.txt
 set /p TAG=<%CONFDIR%\Tag.txt
 set /p IP=<%CONFDIR%\IP.txt
+set OHOMEDRIVE=%HOMEDRIVE%
+set OHOMEPATH=%HOMEPATH%
 if DEFINED NCSU set NCSUDRIVE=%NCSU:~0,2%
-if NOT "%NCSUDRIVE%" == "%HOMEDRIVE%" set USERPROFILE=%NCSUDRIVE% 
-echo Email:    help@sciencesncsu.edu > %USERPROFILE%\Desktop\COS-INFO.txt
-echo HostName: %COMPUTERNAME% >> %USERPROFILE%\Desktop\COS-INFO.txt
-echo Tag:      %TAG%        >> %USERPROFILE%\Desktop\COS-INFO.txt
-echo IP:       %IP%         >> %USERPROFILE%\Desktop\COS-INFO.txt
-if EXIST "%USERPROFILE%\Desktop\COS-INFO.txt" type %USERPROFILE%\Desktop\COS-INFO.txt
+if NOT "%NCSUDRIVE%" == "%HOMEDRIVE%" (
+   set HOMEPATH=\
+   set HOMEDRIVE=%NCSUDRIVE%
+)
+echo Email:    help@sciencesncsu.edu > %HOMEDRIVE%%HOMEPATH%Desktop\COS-INFO.txt
+echo HostName: %COMPUTERNAME% >> %HOMEDRIVE%%HOMEPATH%\Desktop\COS-INFO.txt
+echo Tag:      %TAG%        >> %HOMEDRIVE%%HOMEPATH%\Desktop\COS-INFO.txt
+echo IP:       %IP%         >> %HOMEDRIVE%%HOMEPATH%\Desktop\COS-INFO.txt
+if EXIST "%HOMEDRIVE%%HOMEPATH%\Desktop\COS-INFO.txt" type %HOMEDRIVE%%HOMEPATH%\Desktop\COS-INFO.txt
 set SN=
 set TAG=
 set IP=
 set BINDIR=
 set CONFDIR=
-set USERPROFILE=%HOMEDRIVE%%HOMEPATH%
+set HOMEDRIVE=%OHOMEDRIVE%
+set HOMEPATH=%OHOMEPATH%
+set OHOMEDRIVE=
+set OHOMEPATH=
 timeout /t 20
