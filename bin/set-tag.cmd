@@ -20,3 +20,4 @@ echo "Missing VPN Connection"
 
 :END
 set SNIPEINFO=
+set SN=
