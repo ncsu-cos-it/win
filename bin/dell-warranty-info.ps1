@@ -6,8 +6,8 @@
         [Parameter(Mandatory = $false)]
         $KeySecret
     ) 
-    $ApiKey="l73295568a0b3a495285bc584a5f0594e7"
-    $KeySecret="979f3851d09448bf8862ceda062921fb"
+    $ApiKey="l7e9dce9695b0046c1a2f17096a1a89487"
+    $KeySecret="1f94e1858b324ed3bf5c2dbf6052c6a6"
 
     [String]$servicetags = $ServiceTags -join ", "
     $AuthURI = "https://apigtwb2c.us.dell.com/auth/oauth/v2/token"
