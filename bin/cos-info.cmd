@@ -21,6 +21,7 @@ if DEFINED NCSUDRIVE (
 )
 pause
 echo Email:    help@sciencesncsu.edu > %HOMEDRIVE%%HOMEPATH%\Desktop\COS-INFO.txt
+pause
 echo HostName: %COMPUTERNAME% >> %HOMEDRIVE%%HOMEPATH%\Desktop\COS-INFO.txt
 echo Tag:      %TAG%        >> %HOMEDRIVE%%HOMEPATH%\Desktop\COS-INFO.txt
 echo IP:       %IP%         >> %HOMEDRIVE%%HOMEPATH%\Desktop\COS-INFO.txt
