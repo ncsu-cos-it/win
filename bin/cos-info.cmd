@@ -9,14 +9,14 @@ call %BINDIR%\set-ip
 set /p SN=<%CONFDIR%\SN.txt
 set /p TAG=<%CONFDIR%\Tag.txt
 set /p IP=<%CONFDIR%\IP.txt
-REM set OHOMEDRIVE=%HOMEDRIVE%
-REM set OHOMEPATH=%HOMEPATH%
+set OHOMEDRIVE=%HOMEDRIVE%
+set OHOMEPATH=%HOMEPATH%
 REM STAT Stuff
-REM if DEFINED NCSU set NCSUDRIVE=%NCSU:~0,2%
-REM if NOT "%NCSUDRIVE%" == "%HOMEDRIVE%" (
-   REM set HOMEPATH=\
-   REM set HOMEDRIVE=%NCSUDRIVE%
-REM )
+if DEFINED NCSU set NCSUDRIVE=%NCSU:~0,2%
+if NOT "%NCSUDRIVE%" == "%HOMEDRIVE%" (
+   set HOMEPATH=\
+   set HOMEDRIVE=%NCSUDRIVE%
+)
 echo Email:    help@sciencesncsu.edu > %HOMEDRIVE%%HOMEPATH%\Desktop\COS-INFO.txt
 echo HostName: %COMPUTERNAME% >> %HOMEDRIVE%%HOMEPATH%\Desktop\COS-INFO.txt
 echo Tag:      %TAG%        >> %HOMEDRIVE%%HOMEPATH%\Desktop\COS-INFO.txt
