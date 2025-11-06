@@ -47,4 +47,4 @@
 </ol>
 
 ## Contact
-<a href="mailto:group-sciences-rci@ncsu.edu">group-sciences-rci@ncsu.edu</a><br>
+<a href="mailto:tbyron@ncsu.edu">tbyron@ncsu.edu</a><br>
