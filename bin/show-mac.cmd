@@ -7,3 +7,5 @@ for /f %%G in ("%MACADDR%") do (
 set "MAC=%%G"
 )
 echo %MAC%
+set NMAC=%MAC:-=:%
+echo %NMAC%
