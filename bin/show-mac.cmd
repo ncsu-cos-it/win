@@ -1,7 +1,7 @@
 @echo off
-set TEMPFILE=C:\Temp\MACADDR.txt
+set TEMPFILE="C:\Temp\MACADDR.txt"
 getmac | findstr "\-" | findstr /r "\Device" > %TEMPFILE%
-set /p MACADDR =< %TEMPFILE%
+set /p MACADDR =< TEMPFILE
 del %TEMPFILE%
 set TEMPFILE
 REM for /f %%G in ("%MACADDR") do (
