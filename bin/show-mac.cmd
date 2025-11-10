@@ -1,5 +1,9 @@
 @echo off
-for /f "tokens=*" %%g IN ( 'getmac | findstr "\-" | findstr /r "\Device"' ) do (SET MACADDR=%%g)
+set TEMPFILE=C:\Temp\MACADDR.txt
+getmac | findstr "\-" | findstr /r "\Device" > %TEMPFILE%
+set /p MACADDR =< %TEMPFILE%
+del %TEMPFILE%
+unset TEMPFILE
 #for /f %%G in ("%MACADDR") do (
 #	set "MAC=%%G"
 #)
