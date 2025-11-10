@@ -4,7 +4,8 @@ getmac | findstr "\-" | findstr /r "\Device" > %TEMPFILE%
 set /p MACADDR=<%TEMPFILE%
 REM del %TEMPFILE%
 REM set TEMPFILE
-REM for /f %%G in ("%MACADDR") do (
-REM 	set "MAC=%%G"
-REM )
+for /f %%G in ("%MACADDR") do (
+set "MAC=%%G"
+)
 echo %MACADDR%
+echo %MAC%
