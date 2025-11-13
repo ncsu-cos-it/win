@@ -8,7 +8,7 @@ if "%1" == "" (
 ) ELSE (
    set SN=%1
 )
-echo SN=%SN
+echo SN=%SN%
 powershell -noprofile -executionpolicy bypass -command %BINDIR%\dell-warranty-info.ps1 -ServiceTag %SN%
 
 :END
