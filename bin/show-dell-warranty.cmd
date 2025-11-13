@@ -6,8 +6,9 @@ echo Variable=%1
 if "%1" == "" (
    set /p SN=<%CONFDIR%\SN.txt
 ) ELSE (
-   set /p SN=%1
+   set SN=%1
 )
+echo SN=%SN
 powershell -noprofile -executionpolicy bypass -command %BINDIR%\dell-warranty-info.ps1 -ServiceTag %SN%
 
 :END
