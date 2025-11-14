@@ -6,7 +6,7 @@ del %TEMPFILE%
 for /f %%G in ("%MACADDR%") do (
 set "MAC=%%G"
 )
-set NMAC=%MAC:-=:%
+set NMAC=%MAC:-=%
 
 REM Convert to LowerCase
 setlocal enabledelayedexpansion
