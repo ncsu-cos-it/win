@@ -1,4 +1,6 @@
 @echo off
-REM netsh interface ip show address "Ethernet" | findstr "IP Address"
-ipconfig | findstr "IPv4"
+ipconfig | findstr "IPv4" > %TEMP%\IPADDR.txt
+set /p IPADDR=<%TEMP%\IPADDR.TXT
+set IP=%IPADDR:~39%
+echo %IP%
 timeout /t 20
