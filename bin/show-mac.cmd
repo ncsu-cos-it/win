@@ -29,3 +29,4 @@ for /l %%a in (0,1,25) do (
 echo %_STRING%
 endlocal
 REM echo %NMAC%
+timeout /t 20
