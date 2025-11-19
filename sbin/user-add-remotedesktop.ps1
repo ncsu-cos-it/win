@@ -1,0 +1,7 @@
+﻿$UnityID = Read-Host "Enter Unity Id of user to be allowed RemoteDeesktop access" | Write-Output
+
+$ADDomain = $env:USERDOMAIN
+
+Add-LocalGroupMember -Group "Users -Members" -Member $ADDomain\$UnityID           
+Add-LocalGroupMember -Group "Remote Desktop Users" -Member $ADDomain\$UnityID           
+write "$UnityID added to Users and Remote Desktop Users.
