@@ -1,0 +1,3 @@
+name,mac,description,oupath
+cos-jaxtest,112233aaddee,"Using the killinme.csv","OU=SAS5138,OU=Staff,OU=Computers,OU=stat,OU=cos,OU=ncsu,DC=wolftech,DC=ad,DC=ncsu,DC=edu"
+scit-br-0001,aabbcc112233,"Using the killinme.csv","OU=Desktops,OU=Staff,OU=DEANOFFICE,OU=Staff,OU=COS,OU=NCSU,DC=wolftech,DC=ad,DC=ncsu,DC=edu"

@@ -1,0 +1,22 @@
+Source:  https://www.windowsdigitals.com/install-active-directory-users-and-computers-powershell-cmd/
+
+powershell (Run as administrator)
+Get-WindowsCapability -Name RSAT* -Online | Select-Object -Property DisplayName, State
+
+(This command takes some time to run)
+Add-WindowsCapability -Online -Name Rsat.ActiveDirectory.DS-LDS.Tools
+Add-WindowsCapability -Online -Name Rsat.Group.Policy.Management.Tools
+Add-WindowsCapability -Online -Name Rsat.AD.PowerShell
+
+<Win><R>
+dsa.msc --- Users and Computers
+
+[SCCM]
+Souorce: https://activedirectory.ncsu.edu/services/sccm/sccm-core-services/sccm-console/
+
+\\wolftech.ad.ncsu.edu\files\ncsu\packages\Microsoft-Config Manager Console
+ConsoleSetup.exe (Run as administrator)
+oit200sccm-ss.oit.ncsu.edu
+
+
+ 
