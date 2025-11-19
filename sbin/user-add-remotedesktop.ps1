@@ -4,4 +4,4 @@ $ADDomain = $env:USERDOMAIN
 
 Add-LocalGroupMember -Group "Users -Members" -Member $ADDomain\$UnityID           
 Add-LocalGroupMember -Group "Remote Desktop Users" -Member $ADDomain\$UnityID           
-write "$UnityID added to Users and Remote Desktop Users.
+write-host "$UnityID added to Users and Remote Desktop Users."
