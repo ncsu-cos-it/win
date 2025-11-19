@@ -1,4 +1,4 @@
-﻿$UnityID = Read-Host "Enter Unity Id of user to be removed from RemoteDeesktop access" | Write-Output
+﻿$UnityID = Read-Host "Enter Unity Id of user to be removed from Administrators group" | Write-Output
 
 $ADDomain = $env:USERDOMAIN
 # write-host "$ADDOMAIN\$UnityID"
