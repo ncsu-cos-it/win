@@ -1,4 +1,4 @@
-﻿$UnityID = Read-Host "Enter Unity Id of user to be allowed RemoteDeesktop access" | Write-Output
+﻿$UnityID = Read-Host "Enter Unity Id of user to be allowed ADMIN access" | Write-Output
 
 $ADDomain = $env:USERDOMAIN
 # write-host "$ADDOMAIN\$UnityID"
