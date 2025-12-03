@@ -10,5 +10,4 @@ type %CONFDIR%\SN.txt
 :END
 set BINDIR=
 set CONFDIR=
-exho "Hi Srewn"
 timeout /t 20
