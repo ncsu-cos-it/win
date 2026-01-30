@@ -17,7 +17,7 @@
  <li>{Press} &lt;WinLogo&gt;&lt;R&gt;</li>
  <li>{Type} powershell (Click Run as adminstrator)</li> 
  <li>{Type in PowerShell Window}</li>
- <li>Get-ExecutionPoolicy -list</li>
+ <li>Get-ExecutionPolicy -list</li>
  <li>Set-ExecutionPolicy Bypass -scope LocalMachine -force</li>
  <li>Get-ExecutiionPolicy -list</li>
  <li>sn-set.ps1</li>
