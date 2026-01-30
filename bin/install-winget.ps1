@@ -1,0 +1,2 @@
+Install-Script -Name winget-install
+winget-install
