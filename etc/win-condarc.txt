@@ -1,0 +1,13 @@
+#
+# Copy to c:\Users\Default\.condarc
+#
+channels:
+  - anaconda
+  - conda-forge
+  - defaults
+envs_dirs:
+  - ${USERPROFILE}\Documents\conda\envs
+pkgs_dirs:
+  - ${USERPROFILE}\Documents\conda\pkgs
+always_yes: True
+auto_update_conda: False
