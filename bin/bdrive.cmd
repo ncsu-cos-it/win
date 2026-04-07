@@ -12,7 +12,8 @@ set CD=C:\TEMP
 if exist B:\ (
     net use B: /delete   
 )
-net use B: \\%UNITYID%.file.ncsu.edu\ncsu\%UNITYID% /user:WOLFTECH\%UNITYID% /persistent:no
+REM net use B: \\%UNITYID%.file.ncsu.edu\ncsu\%UNITYID% /user:WOLFTECH\%UNITYID% /persistent:no
+net use B: \\ncsudrive.ncsu.edu\home /user:WOLFTECH\%UNITYID% /persistent:no
 c:\windows\explorer B:
 set UNITYID=
 set CD=
